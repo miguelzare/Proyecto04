@@ -1,0 +1,120 @@
+body {
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Courgette', cursive;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Zen Dots', cursive;
+  }
+  
+  /* Menu 
+  
+  */
+   
+   .menu-ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: auto;
+      background-color: #292120;
+  
+    }
+    
+    .menu-li {
+      float: left;
+    }
+    
+    .menu-li a {
+      display: block;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 5px 20px;
+      text-decoration: none;
+    }
+    
+    .menu-li a:hover {
+      background-color: #ffffff;
+    }
+    /*aqui termina menu*/
+    .cuerpo {
+      background: url(/img/fondo.jpg);
+        display: flex;
+        top: 100px;
+    }
+    .imagen {
+        width: 700px;
+        height: 500px;
+        position: relative;
+        left: 50px;
+        bottom: -100px;
+    }
+    .submenu-ul{
+      display: none;
+    position: absolute;
+    background-color: black;
+    }
+    
+    .submenu-ul li {
+      list-style: none;
+    }
+    .menu-li:hover .submenu-ul {
+      display: block;
+      }
+      p {
+        color: #dadada;
+      }
+
+
+
+      .card {
+        width: 70%;
+        height: 320px;
+        background: #07182E;
+        position: relative;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        overflow: hidden;
+        border-radius: 20px;
+        left: 20px;
+      }
+      
+      .card h2 {
+        z-index: 1;
+        color: white;
+        font-size: 2em;
+      }
+      
+      .card::before {
+        content: '';
+        position: absolute;
+        width: 150px;
+        background-image: linear-gradient(180deg, rgb(117, 14, 201), rgb(207, 200, 207));
+        height: 150%;
+        animation: rotBGimg 3s linear infinite;
+        transition: all 0.2s linear;
+      }
+      
+      @keyframes rotBGimg {
+        from {
+          transform: rotate(0deg);
+        }
+      
+        to {
+          transform: rotate(200deg);
+        }
+      }
+      
+      .card::after {
+        content: '';
+        position: absolute;
+        background: #07182E;
+        ;
+        inset: 5px;
+        border-radius: 3px;
+      }  
+      /* .card:hover:before {
+        background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+        animation: rotBGimg 3.5s linear infinite;
+      } */
+      
+      
